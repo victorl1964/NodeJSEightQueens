@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "4983e3cd-d4d5-491f-b1f4-e1c529743489",
+		"name": "8QUEENS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TEST API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"NIKE AIR BLUE NAVY/PINK STRIPS 7.5\",\n    \"image\": \"W/I\",\n    \"likes\": 0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/eightqueens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"eightqueens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND ALL SOLUTIONS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"NIKE AIR BLUE NAVY/PINK STRIPS 7.5\",\n    \"image\": \"W/I\",\n    \"likes\": 0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/eightqueens/size/8/first/3/all/true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"eightqueens",
+						"size",
+						"8",
+						"first",
+						"3",
+						"all",
+						"true"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND FIRST SOLUTION",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"NIKE AIR BLUE NAVY/PINK STRIPS 7.5\",\n    \"image\": \"W/I\",\n    \"likes\": 0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/eightqueens/size/8/first/3/all/false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"eightqueens",
+						"size",
+						"8",
+						"first",
+						"3",
+						"all",
+						"false"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
